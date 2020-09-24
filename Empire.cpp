@@ -4,8 +4,6 @@
 
 #include <iostream>
 #include "Empire.h"
-#include "Rebel.h"
-#include "Princesse.h"
 
 Empire::Empire(const std::string &nom) : Humanoide(nom) {
     rang="soldat";
@@ -23,7 +21,7 @@ bool Empire::prison() {
 
 void Empire::kidnapper(Princesse &princesse) {
 parle(" : Si tu n'es pas avec moi "+princesse.getNom()+" alors tu es contre moi\n");
-princesse.kidnapper();
+princesse.kidnapper(this);
 nbprincesse+=1;
 }
 

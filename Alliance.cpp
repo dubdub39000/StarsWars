@@ -3,7 +3,7 @@
 //
 
 #include "Alliance.h"
-#include "Yoda.h"
+
 
 
 Alliance::Alliance() {}

@@ -4,8 +4,7 @@
 
 #include <iostream>
 #include "Princesse.h"
-#include "Empire.h"
-#include "Rebel.h"
+
 
 Princesse::Princesse(const std::string &nom, const std::string &couleurRobe) : Humanoide(nom),
 couleur_robe(couleurRobe) {
@@ -13,7 +12,7 @@ couleur_robe(couleurRobe) {
     boisson=("Lait bleu");
 }
 /*************************methode*********************/
-void Princesse::kidnapper() {
+void Princesse::kidnapper(Hors_la_loi *ho) {
     etat= true;
 parle(" : AU SECOURS !!");
 }

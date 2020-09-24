@@ -7,8 +7,9 @@
 
 
 #include <vector>
-#include "Rebel.h"
 #include "Yoda.h"
+
+class Rebel;
 class Yoda;
 class Alliance {
 private:

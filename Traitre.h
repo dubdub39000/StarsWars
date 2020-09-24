@@ -6,18 +6,16 @@
 #define STARSWARS_TRAITRE_H
 
 
-#include "Rebel.h"
+#include "Empire.h"
 #include "Hors_la_loi.h"
 
-/*class Traitre : public Rebel, Hors_la_loi{
+
+class Traitre : public Empire, public Rebel{
 
 private:
-    int nbprincesse;
-    bool etat;
 public:
-    void kidnapper(Princesse &princesse) override;
-    void emprisonner(Rebel &rebel) override;
-};*/
+    Traitre(const std::string &nom);
+};
 
 
 #endif //STARSWARS_TRAITRE_H

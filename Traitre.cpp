@@ -4,13 +4,5 @@
 
 #include "Traitre.h"
 
-/*void Traitre::kidnapper(Princesse &princesse) {
-    parle(" : Si tu n'es pas avec moi "+princesse.getNom()+" alors tu es contre moi\n");
+Traitre::Traitre(const std::string &nom) : Rebel(nom){}
 
-    nbprincesse+=1;
-}
-
-void Traitre::emprisonner(Rebel &rebel) {
-    parle(" je suis fait "+rebel.getNom()+" tu m'a eu !!\n");
-    etat= true;
-}*/

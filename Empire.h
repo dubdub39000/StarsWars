@@ -7,12 +7,12 @@
 
 
 #include "Humanoide.h"
+#include "Hors_la_loi.h"
 #include "Princesse.h"
-#include "Rebel.h"
 
 class Rebel;
 class Princesse;
-class Empire: public Humanoide, Hors_la_loi {
+class Empire: public Humanoide, public Hors_la_loi {
 private:
     std::string rang;
     int nbprincesse;
@@ -24,9 +24,8 @@ public:
     bool prison();
     void kidnapper(Princesse &princesse);
     void emprisonner(Rebel &rebel);
-    const void presentation()const  override;
-    const std::string getNom() const override;
-
+    const void presentation()const;
+    const std::string getNom() const;
     int getRecompense() const;
 };
 

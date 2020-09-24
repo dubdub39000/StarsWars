@@ -8,7 +8,7 @@
 
 #include "Humanoide.h"
 
-class Humain;
+
 
 class Barman: public Humanoide {
 private:

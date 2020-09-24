@@ -7,9 +7,9 @@
 
 
 #include "Humanoide.h"
-#include "Empire.h"
+#include "Rebel.h"
 
-
+class Rebel;
 class Hors_la_loi;
 class Princesse : public Humanoide{
 private:
@@ -18,7 +18,7 @@ private:
 
 public:
     Princesse(const std::string &nom, const std::string &couleurRobe);
-    void kidnapper();
+    void kidnapper(Hors_la_loi *ho);
     void liberer(const std::string &nomrebel);
     void changementrobe(const std::string &couleur);
     const void presentation() const override;

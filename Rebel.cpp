@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include "Rebel.h"
-#include "Empire.h"
+
 
 
 Rebel::Rebel(const std::string &nom): Humanoide(nom) {
@@ -13,8 +13,9 @@ Rebel::Rebel(const std::string &nom): Humanoide(nom) {
     boisson=("le vin de fleur ");
 }
 
-void Rebel::tirer(const Empire &he) const{
-    he.parle("Beau coup de sabre laser !!\n");
+void Rebel::tirer(const Empire *he) const{
+    std::cout<<he<<" : Beau coup de sabre laser !!\n";
+    //he->parle("Beau coup de sabre laser !!\n");
     parle("que la force soit avec moi !!\n");
 }
 

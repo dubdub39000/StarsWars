@@ -1,15 +1,16 @@
+
 #include <iostream>
-#include "Princesse.h"
-#include "Empire.h"
-#include "Rebel.h"
-#include "Barman.h"
 #include "Yoda.h"
 #include "Alliance.h"
+#include "Traitre.h"
+#include "Princesse.h"
+#include "Empire.h"
+#include "Barman.h"
 
 int main() {
     //////////creation alliance+yoda//////////////
     Alliance alliance;
-    Yoda yoda("yoda");
+    Yoda yoda("gfdgd");
     //Rebel *masteryoda = new Yoda("yoda");
     //////////creation personnage//////////////
     Princesse P1("leila","rouge");
@@ -18,7 +19,10 @@ int main() {
     alliance.ajoutmr("han", &yoda);
     alliance.ajoutmr("Francis", &yoda);
     Barman B1("Roger");
-     H1("SP302");
+    Empire H1("SP302");
+    Rebel R1("Fernand");
+
+    //H1 = const_cast<Hors_la_loi>(*H2);
     /////////////test///////////
 
 

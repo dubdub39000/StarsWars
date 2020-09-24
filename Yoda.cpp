@@ -4,8 +4,9 @@
 
 #include <iostream>
 #include "Yoda.h"
+#include "Rebel.h"
 
-Yoda::Yoda(const std::string &nom) : Rebel(nom) {
+Yoda::Yoda(const std::string &nom) : Rebel("yoda") {
 qualificatif="maitre";
 nbrebel=0;
 }

@@ -6,7 +6,7 @@
 #define STARSWARS_YODA_H
 
 
-#include "Rebel.h"
+#include "Empire.h"
 #include "Alliance.h"
 
 class Alliance;

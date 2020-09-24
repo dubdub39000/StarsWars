@@ -2,7 +2,7 @@
 // Created by j.mailly on 23/09/2020.
 //
 
-#include <iostream>
+
 #include "Barman.h"
 
 Barman::Barman(const std::string &nom, const std::string &nombar) : Humanoide(nom), nombar(nombar) {

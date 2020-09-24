@@ -17,7 +17,7 @@ public:
     explicit Humanoide(const std::string &nom);
     virtual void parle(const std::string &texte) const;
 
-    const virtual void presentation()const ;
+    virtual const  void presentation()const =0;
     virtual void boire();
 
     const std::string &getBoisson() const;
