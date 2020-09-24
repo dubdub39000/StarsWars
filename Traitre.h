@@ -10,11 +10,19 @@
 #include "Hors_la_loi.h"
 
 
-class Traitre : public Empire, public Rebel{
+class Traitre : public Hors_la_loi, public Rebel{
 
 private:
+    int nbprincesse;
+    int recompense;
+    bool etat;
 public:
     Traitre(const std::string &nom);
+    void kidnapper(Princesse &princesse)override;
+    void emprisonner(Rebel &rebel)override;
+    const void presentation()const override;
+    int getRecompense() const override;
+    const std::string getNom() const override;
 };
 
 
